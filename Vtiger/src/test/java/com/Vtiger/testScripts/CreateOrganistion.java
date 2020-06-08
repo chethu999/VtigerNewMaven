@@ -31,7 +31,7 @@ public class CreateOrganistion extends BaseConfig
 		return data;
 	}
 
-	@Test(dataProvider = "giveData",groups = "smoke")
+	@Test(dataProvider = "giveData")
 	public void createorganationTest(String Org_name,
 									String Org_website,
 									String	Org_emp,

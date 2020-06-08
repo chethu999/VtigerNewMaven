@@ -24,7 +24,7 @@ public class CreateProduct extends BaseConfig
 		return data;
 	}
 	
-	@Test(dataProvider = "giveData",groups = "smoke")
+	@Test(dataProvider = "giveData")
 	public  void createproductTest(String Product_Id, String  Product_Name, String Produc_price, String Product_color)
 	{
 		

@@ -13,7 +13,7 @@ import com.Vtiger.genericLib.Utility;
 @Listeners(com.Vtiger.genericLib.ListenerImp.class)
 public class CreatVendorTest extends BaseConfig
 {
-	@Test(groups = "smoke")
+	@Test
 	public void CreateVendor()
 	{
 		String vendorName="hp";

@@ -15,7 +15,7 @@ import com.Vtiger.genericLib.Utility;
 @Listeners(com.Vtiger.genericLib.ListenerImp.class)
 public class PurchaseOrderCreateFilter extends BaseConfig
 {
-	@Test(groups = {"smoke","functional"})
+	@Test
 	public void PurchaseCreatefilter()
 	{
 		//mouseOver on more
