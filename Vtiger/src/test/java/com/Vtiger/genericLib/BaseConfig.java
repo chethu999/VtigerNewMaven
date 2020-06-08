@@ -25,7 +25,7 @@ public class BaseConfig
 	@BeforeClass(groups = "smoke")
 	public void configBc() throws InterruptedException
 	{
-		System.setProperty("webdriver.gecko.driver", "G:\\TY Selenium\\Vtiger\\driver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "G:\\GitHub\\VtigerNewMaven\\Vtiger\\driver\\geckodriver.exe");
 		System.setProperty("webdriver.chrome.driver", "G:\\GitHub\\VtigerNewMaven\\Vtiger\\driver\\chromedriver.exe");
 		
 		String br=fl.getPropertyKeyValue("browser");
