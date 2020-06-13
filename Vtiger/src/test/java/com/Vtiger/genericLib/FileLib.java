@@ -51,18 +51,17 @@ public class FileLib
 	}
 	
 
-	public static  Object[][] readAllDataFromExcel(String sheetName)
+	public  Object[][] readAllDataFromExcel(String sheetName)
 	{
 		FileInputStream fi ;
 		Object[][] data = null;
 		try 
 		{
-			fi = new FileInputStream("G:\\TY Selenium\\VtigerNG\\src\\commanData\\product.xlsx");
+			fi = new FileInputStream("G:\\GitHub\\VtigerMevan\\VtigerNG\\src\\commanData\\product.xlsx");
 			Workbook wb = WorkbookFactory.create(fi);
 			Sheet sh = wb.getSheet(sheetName);
 			
 			int rowNum = sh.getLastRowNum();
-			System.out.println("rownum:    "+rowNum);
 			int colNum = sh.getRow(0).getLastCellNum();
 			data = new Object[rowNum][colNum];
 			for (int i = 0; i < rowNum; i++)
@@ -76,7 +75,6 @@ public class FileLib
 		catch (Exception e)
 		{
 			e.printStackTrace();
-			System.out.println("exception");
 		}
 		return data;
 	}
